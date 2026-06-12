@@ -1,0 +1,50 @@
+{
+  "name": "@hm-soft/time-slots",
+  "version": "0.1.0",
+  "description": "예약 시간슬롯 생성기 — 운영시간·슬롯길이·간격·휴식·기존예약·정원으로 가능 슬롯 계산 (의존성 0)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "time-slots",
+    "booking",
+    "reservation",
+    "scheduling",
+    "availability",
+    "calendar",
+    "예약",
+    "hmsoft"
+  ],
+  "author": "HMSOFT",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongmuk/hm-soft-time-slots.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hongmuk/hm-soft-time-slots/issues"
+  },
+  "homepage": "https://github.com/hongmuk/hm-soft-time-slots#readme"
+}
